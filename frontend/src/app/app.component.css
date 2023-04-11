@@ -1,0 +1,189 @@
+:host { 
+    display: contents; 
+  }
+  .desktop1-container {
+    min-height: 100vh;
+  }
+  .desktop1-desktop1 {
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .desktop1-rectangle1 {
+    top: 0px;
+    left: 0px;
+    width: 1460px;
+    height: 49px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .desktop1-text {
+    top: 16px;
+    left: 905px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 14px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Noto Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .desktop1-group1 {
+    top: 10px;
+    left: 850px;
+    width: 31px;
+    height: 28px;
+    display: flex;
+    padding: 0;
+    position: absolute;
+    align-self: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0;
+    margin-right: 0;
+    border-radius: 0px 0px 0px 0px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgba(254, 254, 254, 1);
+  }
+  .desktop1-rectangle7 {
+    top: 12.268044471740723px;
+    left: 5.03350830078125px;
+    width: 21px;
+    height: 11px;
+    position: absolute;
+    box-shadow: 0px 42.896907806396484px 49.67010498046875px 0px rgba(216, 218, 220, 0.7599999904632568) ;
+  }
+  .desktop1-union {
+    top: 6.639171123504639px;
+    left: 5.03350830078125px;
+    width: 21px;
+    height: 11px;
+    position: absolute;
+  }
+  .desktop1-subtract {
+    top: 5.051547050476074px;
+    left: 8.229385375976562px;
+    width: 15px;
+    height: 12px;
+    opacity: 0.80;
+    position: absolute;
+  }
+  .desktop1-rectangle3 {
+    top: 7px;
+    left: 10.14691162109375px;
+    width: 5px;
+    height: 1px;
+    position: absolute;
+    border-color: transparent;
+    border-radius: 4.515463829040527px;
+  }
+  .desktop1-rectangle4 {
+    top: 9.45361328125px;
+    left: 10.14691162109375px;
+    width: 11px;
+    height: 1px;
+    opacity: 0.90;
+    position: absolute;
+  }
+  .desktop1-rectangle5 {
+    top: 11.907215118408203px;
+    left: 10.14691162109375px;
+    width: 9px;
+    height: 1px;
+    opacity: 0.80;
+    position: absolute;
+  }
+  .desktop1-intersect {
+    top: 14.360828399658203px;
+    left: 10.14691162109375px;
+    width: 6px;
+    height: 1px;
+    opacity: 0.60;
+    position: absolute;
+  }
+  .desktop1-text2 {
+    top: 14px;
+    left: 11px;
+    color: rgba(253, 248, 248, 1);
+    height: auto;
+    position: absolute;
+    font-size: 14px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Noto Sans;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .desktop1-group2 {
+    top: 11px;
+    left: 1224px;
+    width: 180px;
+    height: 31px;
+    display: flex;
+    padding: 0;
+    position: absolute;
+    align-self: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0;
+    margin-right: 0;
+    border-radius: 0px 0px 0px 0px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: transparent;
+  }
+  .desktop1-iconfacebook {
+    top: 1px;
+    left: 0px;
+    width: 32px;
+    height: 28px;
+    position: absolute;
+  }
+  .desktop1-iconinstagram {
+    top: 1px;
+    left: 150px;
+    width: 30px;
+    height: 28px;
+    position: absolute;
+  }
+  .desktop1-iconlinkedin {
+    top: 5.6843418860808015e-14px;
+    left: 51px;
+    width: 34px;
+    height: 31px;
+    position: absolute;
+  }
+  .desktop1-icontwitter {
+    top: 1px;
+    left: 104px;
+    width: 27px;
+    height: 28px;
+    position: absolute;
+  }
+  
