@@ -38,4 +38,6 @@ export const ABOUT_US_TEXT = 'FINMAS Financial Services Private Limited is a Pri
 
 export const PHONE_NUMBER = '6382164647';
 
-export const WEBSITE = 'www.finmasfin.com'
+export const WEBSITE = 'www.finmasfin.com';
+
+export const ADDRESS_ALONE_TEXT = 'No.1 Tharai Towers,Loganathan nagar 3rd street,Choolaimedu Chennai - 600094.';

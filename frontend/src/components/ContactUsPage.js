@@ -1,4 +1,7 @@
 import { styled } from "@mui/material";
+import ContactForm from "./contactpagecomponent/ContactForm";
+import ImageDivContactUs from "./contactpagecomponent/ImageForContactUsPage";
+import ThreeCard from "./contactpagecomponent/ThreeCard";
 import AboutUsFooter from "./frontpagecomponent/AboutUsFooter";
 import TitleBar1 from "./frontpagecomponent/TitleBar1";
 import TitleBar2 from "./frontpagecomponent/TitleBar2";
@@ -11,7 +14,7 @@ const Desktop11 = styled('div')({
     isolation: `isolate`,
     flexDirection: `row`,
     width: '100%',
-    height: `1024px`,
+    height: `2684px`,
     justifyContent: `flex-start`,
     alignItems: `flex-start`,
     padding: `0px`,
@@ -24,6 +27,9 @@ function ContactUsPage(props) {
         <Desktop11 className={props.className}>
             <TitleBar1 />
             <TitleBar2 />
+            <ImageDivContactUs/>
+            <ThreeCard/>
+            <ContactForm/>
             <AboutUsFooter/>
         </Desktop11>
     );

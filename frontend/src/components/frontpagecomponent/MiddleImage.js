@@ -98,7 +98,7 @@ const ContactUsButton = styled('div')({
 function MiddleImage() {
     return (
         <Rectangle27>
-            <MidImg src={MidImgF} loading="lazy" alt={"Mid Img"} />
+            <MidImg src={MidImgF} loading="lazy" alt={"Mid Img"} draggable='false' />
             <MidHeadTxt>{FRONT_PAGE_MID_HEAD_TEXT}</MidHeadTxt>
             <MidSubHeadTxt>{FRONT_PAGE_MID_SUB_TEXT}</MidSubHeadTxt>
             <MidCatchyPoint>{FRONT_PAGE_MID_CATCHY_TEXT}</MidCatchyPoint>
