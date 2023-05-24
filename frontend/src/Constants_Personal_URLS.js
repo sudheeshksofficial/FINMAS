@@ -3,7 +3,7 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-19 15:57:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-24 10:43:44
+ * @Last Modified time: 2023-05-24 13:59:26
  * @Description: description
  */
 
@@ -11,10 +11,6 @@
 export const HOME_URL = '/';
 
 export const OUR_TEAM_URL = '/our-team';
-
-export const PRODUCTS_URL = '/products';
-
-export const SERVICES_URL = '/services';
 
 export const CAREERS_URL = '/careers';
 

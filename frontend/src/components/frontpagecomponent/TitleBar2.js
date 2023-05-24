@@ -3,7 +3,7 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-19 15:57:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-24 10:39:49
+ * @Last Modified time: 2023-05-24 14:35:48
  * @Description: description
  */
 
@@ -12,7 +12,7 @@ import Finmas1Image from '../../assets/images/finmas_logo.jpg';
 import { Grow, styled } from '@mui/material';
 import { CAREERS_TEXT, CLIENTS_TEXT, CONTACT_TEXT, HOME_TEXT, MEMBER_TEXT, OUR_TEAM_TEXT, PRODUCTS_TEXT, SERVICES_TEXT } from '../../Constants';
 import { Link } from 'react-router-dom';
-import { BECOME_PARTNER_URL, CAREERS_URL, CLIENTS_URL, CONTACT_US_URL, HOME_URL, LOCAL_HOST_URL, OUR_TEAM_URL, PRODUCTS_URL, SERVICES_URL } from '../../Constants_Personal_URLS';
+import { AGRICULTURE_LOAN_URL, AUTO_LOAN_URL, BECOME_PARTNER_URL, BUSINESS_CONSULTING_URL, BUSINESS_LOAN_URL, CAREERS_URL, CLIENTS_URL, CONTACT_US_URL, CORPORATE_FINANCE_URL, CORPORATE_TRUST_URL, CREDIT_CARD_URL, EDUCATION_LOAN_URL, FINANCIAL_ADVISOR_URL, GOLD_LOAN_URL, HOME_LOAN_URL, HOME_URL, INSURANCE_URL, INVESTMENT_CONSULTING_URL, LOCAL_HOST_URL, MORTGAGE_LOAN_URL, NET_WORTH_URL, OUR_TEAM_URL, PERSONAL_LOAN_URL, PROPERTY_LOAN_URL, STOCKS_URL, TRADING_URL, WEALTH_URL } from '../../Constants_Personal_URLS';
 import { useEffect, useRef, useState } from 'react';
 import Rectangle1min from './Rectangle1/Rectangle1min';
 
@@ -21,13 +21,21 @@ import Rectangle1min from './Rectangle1/Rectangle1min';
 function TitleBar2() {
 
     var current = window.location.href;
-    
+
+    const [homeHover, setHomeHover] = useState(false)
+    const [teamHover, setTeamHOver] = useState(false)
+    const [productHover, setProductHover] = useState(false)
+    const [serviceHover, setServiceHover] = useState(false)
+    const [careerHover, setCareerHover] = useState(false)
+    const [clientsHover, setClientsHover] = useState(false)
+    const [contactHover, setContactHover] = useState(false)
+
 
     const Home = styled('div')({
         textAlign: `left`,
         whiteSpace: `pre-wrap`,
         fontSynthesis: `none`,
-        color: (current===LOCAL_HOST_URL+HOME_URL) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
+        color: (current === LOCAL_HOST_URL + HOME_URL || homeHover) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
         fontStyle: `normal`,
         fontFamily: `Noto Sans`,
         fontWeight: `400`,
@@ -45,7 +53,7 @@ function TitleBar2() {
         textAlign: `left`,
         whiteSpace: `pre-wrap`,
         fontSynthesis: `none`,
-        color: (current===LOCAL_HOST_URL+OUR_TEAM_URL) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
+        color: (current === LOCAL_HOST_URL + OUR_TEAM_URL || teamHover) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
         fontStyle: `normal`,
         fontFamily: `Noto Sans`,
         fontWeight: `400`,
@@ -63,7 +71,7 @@ function TitleBar2() {
         textAlign: `left`,
         whiteSpace: `pre-wrap`,
         fontSynthesis: `none`,
-        color: (current===LOCAL_HOST_URL+PRODUCTS_URL) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
+        color: (productHover) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
         fontStyle: `normal`,
         fontFamily: `Noto Sans`,
         fontWeight: `400`,
@@ -74,13 +82,14 @@ function TitleBar2() {
         position: `absolute`,
         left: `611px`,
         top: `86px`,
+        cursor: 'pointer'
     });
 
     const Services = styled('div')({
         textAlign: `left`,
         whiteSpace: `pre-wrap`,
         fontSynthesis: `none`,
-        color: (current===LOCAL_HOST_URL+SERVICES_URL) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
+        color: (serviceHover) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
         fontStyle: `normal`,
         fontFamily: `Noto Sans`,
         fontWeight: `400`,
@@ -92,13 +101,14 @@ function TitleBar2() {
         position: `absolute`,
         left: `738px`,
         top: `86px`,
+        cursor: 'pointer'
     });
 
     const Careers = styled('div')({
         textAlign: `left`,
         whiteSpace: `pre-wrap`,
         fontSynthesis: `none`,
-        color: (current===LOCAL_HOST_URL+CAREERS_URL) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
+        color: (current === LOCAL_HOST_URL + CAREERS_URL || careerHover) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
         fontStyle: `normal`,
         fontFamily: `Noto Sans`,
         fontWeight: `400`,
@@ -116,7 +126,7 @@ function TitleBar2() {
         textAlign: `left`,
         whiteSpace: `pre-wrap`,
         fontSynthesis: `none`,
-        color: (current===LOCAL_HOST_URL+CLIENTS_URL) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
+        color: (current === LOCAL_HOST_URL + CLIENTS_URL || clientsHover) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
         fontStyle: `normal`,
         fontFamily: `Noto Sans`,
         fontWeight: `400`,
@@ -134,7 +144,7 @@ function TitleBar2() {
         textAlign: `left`,
         whiteSpace: `pre-wrap`,
         fontSynthesis: `none`,
-        color: (current===LOCAL_HOST_URL+CONTACT_US_URL) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
+        color: (current === LOCAL_HOST_URL + CONTACT_US_URL || contactHover) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
         fontStyle: `normal`,
         fontFamily: `Noto Sans`,
         fontWeight: `400`,
@@ -232,6 +242,71 @@ function TitleBar2() {
         opacity: state.showFirst ? 0 : 1
     });
 
+    const ProductsHoverDiv = styled('div')({
+        display: (productHover) ? 'block' : 'none',
+        position: 'absolute',
+        width: '200px',
+        boxShadow: '0px 4px 7px -3px rgba(0,0,0,.09)',
+        boxSizing: 'border-box',
+        zIndex: 1,
+        lineHeight: 1.7,
+        //marginTop: 29
+    })
+
+    const ProductsHoverDivLink = styled('div')({
+        display: (productHover) ? 'inline-block' : 'none',
+        textAlign: `left`,
+        whiteSpace: `pre-wrap`,
+        fontSynthesis: `none`,
+        background: `linear-gradient(90deg, rgba(241,18,22,1) 0%, rgba(209,12,63,1) 35%, rgba(15,0,157,1) 100%)`,
+        color: 'rgba(256, 256, 256, 1)',
+        fontStyle: `normal`,
+        fontFamily: `sans-seriff`,
+        fontWeight: `400`,
+        fontSize: `18px`,
+        letterSpacing: `0px`,
+        textDecoration: `none`,
+        textTransform: `none`,
+        width: `350px`,
+        height: '42px',
+        position: 'relative',
+        paddingLeft: 25,
+        paddingTop: 3
+    })
+
+
+    const ServicesHoverDiv = styled('div')({
+        display: (serviceHover) ? 'block' : 'none',
+        position: 'absolute',
+        width: '200px',
+        boxShadow: '0px 4px 7px -3px rgba(0,0,0,.09)',
+        boxSizing: 'border-box',
+        zIndex: 1,
+        lineHeight: 1.7,
+        //marginTop: 29
+    })
+
+    const ServicesHoverDivLink = styled('div')({
+        display: (serviceHover) ? 'inline-block' : 'none',
+        textAlign: `left`,
+        whiteSpace: `pre-wrap`,
+        fontSynthesis: `none`,
+        background: `linear-gradient(90deg, rgba(241,18,22,1) 0%, rgba(209,12,63,1) 35%, rgba(15,0,157,1) 100%)`,
+        color: 'rgba(256, 256, 256, 1)',
+        fontStyle: `normal`,
+        fontFamily: `sans-seriff`,
+        fontWeight: `400`,
+        fontSize: `18px`,
+        letterSpacing: `0px`,
+        textDecoration: `none`,
+        textTransform: `none`,
+        width: `350px`,
+        height: '42px',
+        position: 'relative',
+        paddingLeft: 25,
+        paddingTop: 3
+    })
+
 
 
     return (
@@ -248,27 +323,53 @@ function TitleBar2() {
                 </Link>
             </Grow>
             <Link to={HOME_URL}>
-                <Home>
+                <Home onMouseEnter={() => setHomeHover(true)} onMouseLeave={() => setHomeHover(false)}>
                     {HOME_TEXT}
                 </Home>
             </Link>
             <Link to={OUR_TEAM_URL}>
-                <OurTeam>{OUR_TEAM_TEXT}</OurTeam>
+                <OurTeam onMouseEnter={() => setTeamHOver(true)} onMouseLeave={() => setTeamHOver(false)}>{OUR_TEAM_TEXT}</OurTeam>
             </Link>
-            <Link to={PRODUCTS_URL}>
-                <Products>{PRODUCTS_TEXT}</Products>
-            </Link>
-            <Link to={SERVICES_URL}>
-                <Services>{SERVICES_TEXT}</Services>
-            </Link>
+            <Products onMouseEnter={() => setProductHover(true)} onMouseLeave={() => setProductHover(false)}>
+                {PRODUCTS_TEXT}
+                <ProductsHoverDiv>
+                    <div style={{ marginTop: 30, cursor: 'default' }} />
+                    <Link to={PERSONAL_LOAN_URL}><ProductsHoverDivLink>Personal Loan</ProductsHoverDivLink></Link>
+                    <Link to={BUSINESS_LOAN_URL}><ProductsHoverDivLink>Business Loan</ProductsHoverDivLink></Link>
+                    <Link to={MORTGAGE_LOAN_URL}><ProductsHoverDivLink>Mortgage Loan</ProductsHoverDivLink></Link>
+                    <Link to={HOME_LOAN_URL}><ProductsHoverDivLink>Home Loan</ProductsHoverDivLink></Link>
+                    <Link to={AUTO_LOAN_URL}><ProductsHoverDivLink>Auto Loan</ProductsHoverDivLink></Link>
+                    <Link to={INSURANCE_URL}><ProductsHoverDivLink>Insurance</ProductsHoverDivLink></Link>
+                    <Link to={TRADING_URL}><ProductsHoverDivLink>Trading and Investment</ProductsHoverDivLink></Link>
+                    <Link to={CREDIT_CARD_URL}><ProductsHoverDivLink>Credit Cards</ProductsHoverDivLink></Link>
+                    <Link to={GOLD_LOAN_URL}><ProductsHoverDivLink>Gold Loan</ProductsHoverDivLink></Link>
+                    <Link to={AGRICULTURE_LOAN_URL}><ProductsHoverDivLink>Agriculture Loan</ProductsHoverDivLink></Link>
+                    <Link to={EDUCATION_LOAN_URL}><ProductsHoverDivLink>Education Loan</ProductsHoverDivLink></Link>
+                    <Link to={PROPERTY_LOAN_URL}><ProductsHoverDivLink>Property Loan</ProductsHoverDivLink></Link>
+                </ProductsHoverDiv>
+            </Products>
+            <Services onMouseEnter={() => setServiceHover(true)} onMouseLeave={() => setServiceHover(false)}>
+                {SERVICES_TEXT}
+                <ServicesHoverDiv>
+                    <div style={{ marginTop: 30, cursor: 'default' }} />
+                    <Link to={FINANCIAL_ADVISOR_URL}><ServicesHoverDivLink>Financial Advisor</ServicesHoverDivLink></Link>
+                    <Link to={BUSINESS_CONSULTING_URL}><ServicesHoverDivLink>Business Consulting</ServicesHoverDivLink></Link>
+                    <Link to={CORPORATE_FINANCE_URL}><ServicesHoverDivLink>Corporate Finance</ServicesHoverDivLink></Link>
+                    <Link to={CORPORATE_TRUST_URL}><ServicesHoverDivLink>Corporate Trust Services</ServicesHoverDivLink></Link>
+                    <Link to={INVESTMENT_CONSULTING_URL}><ServicesHoverDivLink>Investment Consulting</ServicesHoverDivLink></Link>
+                    <Link to={NET_WORTH_URL}><ServicesHoverDivLink>Net Worth And Cash Flow Analysis</ServicesHoverDivLink></Link>
+                    <Link to={STOCKS_URL}><ServicesHoverDivLink>Stocks And Bonds</ServicesHoverDivLink></Link>
+                    <Link to={WEALTH_URL}><ServicesHoverDivLink>Wealth Management</ServicesHoverDivLink></Link>
+                </ServicesHoverDiv>
+            </Services>
             <Link to={CAREERS_URL}>
-                <Careers>{CAREERS_TEXT}</Careers>
+                <Careers onMouseEnter={() => setCareerHover(true)} onMouseLeave={() => setCareerHover(false)}>{CAREERS_TEXT}</Careers>
             </Link>
             <Link to={CLIENTS_URL}>
-                <Clients>{CLIENTS_TEXT}</Clients>
+                <Clients onMouseEnter={() => setClientsHover(true)} onMouseLeave={() => setClientsHover(false)}>{CLIENTS_TEXT}</Clients>
             </Link>
             <Link to={CONTACT_US_URL}>
-                <ContactUs>{CONTACT_TEXT}</ContactUs>
+                <ContactUs onMouseEnter={() => setContactHover(true)} onMouseLeave={() => setContactHover(false)}>{CONTACT_TEXT}</ContactUs>
             </Link>
             <Link to={BECOME_PARTNER_URL}>
                 <BecomeAMember>{MEMBER_TEXT}</BecomeAMember>
