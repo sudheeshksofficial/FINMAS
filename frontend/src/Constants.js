@@ -1,3 +1,13 @@
+/*
+ * @Author: Vineeth Raj B
+ * @Email:  vineebala99@gmail.com
+ * @Date:   2023-05-19 15:57:29
+ * @Last Modified by: Vineeth Raj B
+ * @Last Modified time: 2023-05-24 10:43:53
+ * @Description: description
+ */
+
+
 export const FACEBOOK_URL = "https://www.facebook.com/";
 
 export const TWITTER_URL = 'https://www.twitter.com/';

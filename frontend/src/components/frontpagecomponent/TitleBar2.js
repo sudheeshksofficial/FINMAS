@@ -1,3 +1,13 @@
+/*
+ * @Author: Vineeth Raj B
+ * @Email:  vineebala99@gmail.com
+ * @Date:   2023-05-19 15:57:29
+ * @Last Modified by: Vineeth Raj B
+ * @Last Modified time: 2023-05-24 10:39:49
+ * @Description: description
+ */
+
+
 import Finmas1Image from '../../assets/images/finmas_logo.jpg';
 import { Grow, styled } from '@mui/material';
 import { CAREERS_TEXT, CLIENTS_TEXT, CONTACT_TEXT, HOME_TEXT, MEMBER_TEXT, OUR_TEAM_TEXT, PRODUCTS_TEXT, SERVICES_TEXT } from '../../Constants';

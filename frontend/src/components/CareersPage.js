@@ -1,3 +1,13 @@
+/*
+ * @Author: Vineeth Raj B
+ * @Email:  vineebala99@gmail.com
+ * @Date:   2023-05-19 15:57:29
+ * @Last Modified by: Vineeth Raj B
+ * @Last Modified time: 2023-05-24 10:40:09
+ * @Description: description
+ */
+
+
 import styled from "@emotion/styled";
 import AboutUsFooter from "./frontpagecomponent/AboutUsFooter";
 import TitleBar1 from "./frontpagecomponent/TitleBar1";

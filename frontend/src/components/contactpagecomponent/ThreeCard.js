@@ -1,3 +1,15 @@
+/*
+ * @Author: Vineeth Raj B
+ * @Email:  vineebala99@gmail.com
+ * @Date:   2023-05-19 15:57:29
+ * @Last Modified by: Vineeth Raj B
+ * @Last Modified time: 2023-05-24 09:45:42
+ * @Description: description
+ */
+
+
+
+
 import { Card, CardContent, CardMedia, styled } from "@mui/material";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
