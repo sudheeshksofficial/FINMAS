@@ -3,7 +3,7 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-19 15:57:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-24 10:39:09
+ * @Last Modified time: 2023-05-24 12:42:00
  * @Description: description
  */
 
@@ -256,11 +256,11 @@ function AboutUsFooter() {
                         </Column>
                         <Column>
                             <Heading>Contact Info</Heading>
-                            <Paragraph style={{ display: `flex`, flexDirection: `row` }}>
+                            <Paragraph style={{ display: `flex`, flexDirection: `row`, width: 300 }}>
                                 <PlaceIcon />
                                 <div style={{ marginLeft: `10px` }}>
-                                    FINMAS Financial Services Pvt Ltd
-                                    No.1 Tharai Towers,
+                                    FINMAS Financial Services Pvt Ltd No.1 
+                                    Tharai Towers,
                                     <br></br>
                                     Loganathan nagar 3rd street,
                                     <br></br>
