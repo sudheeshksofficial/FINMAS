@@ -3,7 +3,7 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-19 15:57:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-24 12:42:00
+ * @Last Modified time: 2023-05-25 18:25:27
  * @Description: description
  */
 
@@ -19,7 +19,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import LanguageIcon from '@mui/icons-material/Language';
 import FooterIcons from "./FooterIcons";
-import man_laptop from '../../assets/images/ManLaptop.jfif';
+import { FOOTER_IMAGE } from "../../ConstantsImage";
 
 const OuterBox = styled('div')({
     background: `rgba(0, 0, 0, 1)`,
@@ -116,7 +116,7 @@ const FooterImg = styled(`img`)({
 function AboutUsFooter() {
     return (
         <OuterBox>
-            <FooterImg src={man_laptop} alt='man-laptop' draggable='false' />
+            <FooterImg src={FOOTER_IMAGE} alt='man-laptop' draggable='false' />
             <Box>
                 <Container>
                     <Row>

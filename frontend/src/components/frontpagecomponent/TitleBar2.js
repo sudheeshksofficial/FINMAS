@@ -3,7 +3,7 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-19 15:57:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-24 14:35:48
+ * @Last Modified time: 2023-05-25 13:40:44
  * @Description: description
  */
 
@@ -29,6 +29,31 @@ function TitleBar2() {
     const [careerHover, setCareerHover] = useState(false)
     const [clientsHover, setClientsHover] = useState(false)
     const [contactHover, setContactHover] = useState(false)
+
+    const PRODUCTS_URL = [
+        LOCAL_HOST_URL + PERSONAL_LOAN_URL, 
+        LOCAL_HOST_URL + BUSINESS_LOAN_URL,
+        LOCAL_HOST_URL + MORTGAGE_LOAN_URL,
+        LOCAL_HOST_URL + HOME_LOAN_URL,
+        LOCAL_HOST_URL + AUTO_LOAN_URL,
+        LOCAL_HOST_URL + INSURANCE_URL,
+        LOCAL_HOST_URL + CREDIT_CARD_URL,
+        LOCAL_HOST_URL + GOLD_LOAN_URL,
+        LOCAL_HOST_URL + AGRICULTURE_LOAN_URL,
+        LOCAL_HOST_URL + EDUCATION_LOAN_URL,
+        LOCAL_HOST_URL + PROPERTY_LOAN_URL 
+    ]
+
+    const SERVICES_URL = [
+        LOCAL_HOST_URL + FINANCIAL_ADVISOR_URL,
+        LOCAL_HOST_URL + BUSINESS_CONSULTING_URL,
+        LOCAL_HOST_URL + CORPORATE_FINANCE_URL,
+        LOCAL_HOST_URL + CORPORATE_TRUST_URL,
+        LOCAL_HOST_URL + INVESTMENT_CONSULTING_URL,
+        LOCAL_HOST_URL + NET_WORTH_URL,
+        LOCAL_HOST_URL + STOCKS_URL,
+        LOCAL_HOST_URL + WEALTH_URL
+    ]
 
 
     const Home = styled('div')({
@@ -71,7 +96,7 @@ function TitleBar2() {
         textAlign: `left`,
         whiteSpace: `pre-wrap`,
         fontSynthesis: `none`,
-        color: (productHover) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
+        color: ( PRODUCTS_URL.indexOf(current)>-1 || productHover) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
         fontStyle: `normal`,
         fontFamily: `Noto Sans`,
         fontWeight: `400`,
@@ -89,7 +114,7 @@ function TitleBar2() {
         textAlign: `left`,
         whiteSpace: `pre-wrap`,
         fontSynthesis: `none`,
-        color: (serviceHover) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
+        color: ( SERVICES_URL.indexOf(current)>-1 || serviceHover) ? `rgba(0, 0, 256, 1)` : `rgba(0, 0, 0, 1)`,
         fontStyle: `normal`,
         fontFamily: `Noto Sans`,
         fontWeight: `400`,
@@ -268,7 +293,7 @@ function TitleBar2() {
         textDecoration: `none`,
         textTransform: `none`,
         width: `350px`,
-        height: '42px',
+        height: '42.9px',
         position: 'relative',
         paddingLeft: 25,
         paddingTop: 3

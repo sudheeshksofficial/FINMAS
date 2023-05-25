@@ -3,7 +3,7 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-19 15:57:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-24 10:39:30
+ * @Last Modified time: 2023-05-25 18:26:58
  * @Description: description
  */
 
@@ -11,8 +11,8 @@
 
 import { styled } from "@mui/material";
 import { Link } from "react-router-dom";
-import MidImgF from '../../assets/images/Middle_Image_FirstPage.jpg'
 import { CONTACT_TEXT, FRONT_PAGE_MID_CATCHY_TEXT, FRONT_PAGE_MID_HEAD_TEXT, FRONT_PAGE_MID_SUB_TEXT, KNOW_MORE_FIRST_PAGE } from "../../Constants";
+import { HOME_PAGE_FIRST_IMAGE } from "../../ConstantsImage";
 import { CONTACT_US_URL, OUR_TEAM_URL } from "../../Constants_Personal_URLS";
 import Rectangle1Button from "./Rectangle1/Rectangle1Button";
 
@@ -109,7 +109,7 @@ const ContactUsButton = styled('div')({
 function MiddleImage() {
     return (
         <Rectangle27>
-            <MidImg src={MidImgF} loading="lazy" alt={"Mid Img"} draggable='false' />
+            <MidImg src={HOME_PAGE_FIRST_IMAGE} loading="lazy" alt={"Mid Img"} draggable='false' />
             <MidHeadTxt>{FRONT_PAGE_MID_HEAD_TEXT}</MidHeadTxt>
             <MidSubHeadTxt>{FRONT_PAGE_MID_SUB_TEXT}</MidSubHeadTxt>
             <MidCatchyPoint>{FRONT_PAGE_MID_CATCHY_TEXT}</MidCatchyPoint>

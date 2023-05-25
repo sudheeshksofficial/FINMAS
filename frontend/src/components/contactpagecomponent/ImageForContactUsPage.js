@@ -3,14 +3,14 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-19 15:57:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-24 09:45:35
+ * @Last Modified time: 2023-05-25 18:43:39
  * @Description: description
  */
 
 
 
 import { styled } from "@mui/material";
-import PersonHoldingPhone from '../../assets/images/PersonHoldingPhone.jfif'
+import { CONTACT_US_PAGE_FIRST_IMAGE } from "../../ConstantsImage";
 
 const OuterDiv = styled('div')({
     background: `rgba(0, 0, 0, 1)`,
@@ -54,7 +54,7 @@ const StyledP = styled('p')({
 function ImageDivContactUs(){
     return (
         <OuterDiv>
-            <ImageContact src={PersonHoldingPhone} loading='lazy' alt='PersonPhone'/>
+            <ImageContact src={CONTACT_US_PAGE_FIRST_IMAGE} loading='lazy' alt='PersonPhone'/>
             <InnerDiv>
                 <StyledH2>Contact Us</StyledH2>
                 <StyledP>Home | Contact</StyledP>

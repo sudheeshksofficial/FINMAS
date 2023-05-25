@@ -3,7 +3,7 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-19 15:57:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-24 12:18:11
+ * @Last Modified time: 2023-05-25 18:46:40
  * @Description: description
  */
 
@@ -12,7 +12,7 @@
 
 import { styled } from "@mui/material";
 import { useState } from "react";
-import Img2 from '../../assets/images/Middle_Image_FirstPage.jpg'
+import { CONTACT_US_PAGE_SECOND_IMAGE } from "../../ConstantsImage";
 
 const OuterDiv = styled('div')({
     height: '600px',
@@ -67,14 +67,14 @@ function ContactForm() {
 
     return (
         <OuterDiv>
-            <ImageDiv src={Img2} loading='lazy' alt="Form Image" />
+            <ImageDiv src={CONTACT_US_PAGE_SECOND_IMAGE} loading='lazy' alt="Form Image" />
             <FormDiv>
             </FormDiv>
             <FormInnerDiv>
                 <form onSubmit={onHandleEvent} style={{ width: '100%' }}>
                     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', marginLeft: 10, color: 'white' }}>
                         <label style={{ flex: '0 0 50%', display: 'flex', flexDirection: 'column', width: '6em', marginRight: '.5em', paddingTop: '1.5em', fontFamily: 'sans-serif', fontWeight: 400, fontSize: '15px'}}>Firstname *
-                            <input type='text' style={{ display: 'inline-block', width: '20em', position: 'relative', top: '.5em', background: 'rgba(0, 0, 256, 1)', border: 0, color:'white' }} placeholder='Please Enter your firstname' value={name} onChange={(e) => {setName(e.target.value)}}/>
+                            <input type='text' style={{ display: 'inline-block', width: '20em', position: 'relative', top: '.5em', background: 'rgba(0, 0, 256, 1)', border: 0, color:'white' }}  placeholder='Please Enter your firstname' value={name} onChange={(e) => {setName(e.target.value)}}/>
                         </label>
                         <label style={{ flex: '0 0 50%', display: 'flex', flexDirection: 'column', width: '6em', marginRight: '.5em', paddingTop: '1.5em', fontFamily: 'sans-serif', fontWeight: 400, fontSize: '15px' }}>Lastname *
                             <input type='text' style={{ display: 'inline-block', width: '21em', position: 'relative', top: '.5em', background: 'rgba(0, 0, 256, 1)', border: 0, color:'white' }} placeholder='Please Enter your lastname' value={lastname} onChange={(e) => {setLastName(e.target.value)}}/>
