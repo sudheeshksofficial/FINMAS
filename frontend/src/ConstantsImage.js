@@ -3,7 +3,7 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-25 18:40:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-25 18:46:21
+ * @Last Modified time: 2023-05-25 20:08:44
  * @Description: description
  */
 
@@ -19,6 +19,7 @@ export const HOME_PAGE_FIRST_IMAGE = require('./assets/images/Middle_Image_First
 
 //Our Team Page Images
 export const OUR_TEAM_PAGE_FIRST_IMAGE = require('./assets/images/Middle_Image_FirstPage.jpg');
+export const OUR_TEAM_PAGE_SECOND_IMAGE = require('./assets/images/Middle_Image_FirstPage.jpg');
 
 
 //Clients Page Images
