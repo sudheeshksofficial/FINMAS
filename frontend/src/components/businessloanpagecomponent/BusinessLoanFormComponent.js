@@ -1,5 +1,5 @@
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { AGRICULTURE_LOAN_URL, AUTO_LOAN_URL, BUSINESS_LOAN_URL, CREDIT_CARD_URL, EDUCATION_LOAN_URL, GOLD_LOAN_URL, HOME_LOAN_URL, INSURANCE_URL, LOCAL_HOST_URL, MORTGAGE_LOAN_URL, PERSONAL_LOAN_URL, PROPERTY_LOAN_URL, TRADING_URL } from '../../Constants_Personal_URLS';
+import { AGRICULTURE_LOAN_URL, AUTO_LOAN_URL, BUSINESS_LOAN_URL, CREDIT_CARD_URL, EDUCATION_LOAN_URL, GOLD_LOAN_URL, HOME_LOAN_URL, INSURANCE_URL, LOCAL_HOST_URL, MORTGAGE_LOAN_URL, PERSONAL_LOAN_URL, PRODUCTS_URL, PROPERTY_LOAN_URL, TRADING_URL } from '../../Constants_Personal_URLS';
 import { styled } from "@mui/material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -53,19 +53,7 @@ function BusinessLoanFormComponent() {
 
     var current = window.location.href;
 
-    const PRODUCTS_URL = [
-        LOCAL_HOST_URL + PERSONAL_LOAN_URL,
-        LOCAL_HOST_URL + BUSINESS_LOAN_URL,
-        LOCAL_HOST_URL + MORTGAGE_LOAN_URL,
-        LOCAL_HOST_URL + HOME_LOAN_URL,
-        LOCAL_HOST_URL + AUTO_LOAN_URL,
-        LOCAL_HOST_URL + INSURANCE_URL,
-        LOCAL_HOST_URL + CREDIT_CARD_URL,
-        LOCAL_HOST_URL + GOLD_LOAN_URL,
-        LOCAL_HOST_URL + AGRICULTURE_LOAN_URL,
-        LOCAL_HOST_URL + EDUCATION_LOAN_URL,
-        LOCAL_HOST_URL + PROPERTY_LOAN_URL
-    ];
+    
 
     const [name, setName] = useState('')
     const [companyname, setCompanyName] = useState('')

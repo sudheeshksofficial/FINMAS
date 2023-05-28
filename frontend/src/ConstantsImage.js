@@ -3,7 +3,7 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-25 18:40:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-26 10:15:52
+ * @Last Modified time: 2023-05-28 15:53:25
  * @Description: description
  */
 
@@ -86,22 +86,33 @@ export const PROPERTY_LOAN_PAGE_FIRST_IMAGE = require('./assets/images/ManLaptop
 
 //Financial Advisor Page Images
 export const FINANCIAL_ADVISOR_PAGE_FIRST_IMAGE = require('./assets/images/ManLaptop.jfif');
+export const FINANCIAL_ADVISOR_PAGE_SECOND_IMAGE = require('./assets/images/ManLaptop.jfif');
 
 
 //Business Consulting Page Images
 export const BUSINESS_CONSULTING_PAGE_FIRST_IMAGE = require('./assets/images/ManLaptop.jfif');
+export const BUSINESS_CONSULTING_PAGE_SECOND_IMAGE = require('./assets/images/ManLaptop.jfif');
 
 //Corporate Finance Page Images
 export const CORPORATE_FINANCE_PAGE_FIRST_IMAGE = require('./assets/images/ManLaptop.jfif');
+export const CORPORATE_FINANCE_PAGE_SECOND_IMAGE = require('./assets/images/ManLaptop.jfif');
+
+//Corporate Trust Page Images
+export const CORPORATE_TRUST_PAGE_FIRST_IMAGE = require('./assets/images/ManLaptop.jfif');
+export const CORPORATE_TRUST_PAGE_SECOND_IMAGE = require('./assets/images/ManLaptop.jfif');
 
 //Investment Consulting Page Images
 export const INVESTMENT_CONSULTING_PAGE_FIRST_IMAGE = require('./assets/images/ManLaptop.jfif');
+export const INVESTMENT_CONSULTING_PAGE_SECOND_IMAGE = require('./assets/images/ManLaptop.jfif');
 
 //Net Worth & cash Flow Page Images
 export const NET_WORTH_PAGE_FIRST_IMAGE = require('./assets/images/ManLaptop.jfif');
+export const NET_WORTH_PAGE_SECOND_IMAGE = require('./assets/images/ManLaptop.jfif');
 
 //Stocks & Bonds Page Images
 export const STOCKS_PAGE_FIRST_IMAGE = require('./assets/images/ManLaptop.jfif');
+export const STOCKS_PAGE_SECOND_IMAGE = require('./assets/images/ManLaptop.jfif');
 
 //Wealth Management Page Images
 export const WEALTH_PAGE_FIRST_IMAGE = require('./assets/images/ManLaptop.jfif');
+export const WEALTH_PAGE_SECOND_IMAGE = require('./assets/images/ManLaptop.jfif');

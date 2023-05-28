@@ -1,5 +1,5 @@
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { AGRICULTURE_LOAN_URL, AUTO_LOAN_URL, BUSINESS_LOAN_URL, CREDIT_CARD_URL, EDUCATION_LOAN_URL, GOLD_LOAN_URL, HOME_LOAN_URL, INSURANCE_URL, LOCAL_HOST_URL, MORTGAGE_LOAN_URL, PERSONAL_LOAN_URL, PROPERTY_LOAN_URL, TRADING_URL } from '../../Constants_Personal_URLS';
+import { AGRICULTURE_LOAN_URL, AUTO_LOAN_URL, BUSINESS_LOAN_URL, CREDIT_CARD_URL, EDUCATION_LOAN_URL, GOLD_LOAN_URL, HOME_LOAN_URL, INSURANCE_URL, LOCAL_HOST_URL, MORTGAGE_LOAN_URL, PERSONAL_LOAN_URL, PRODUCTS_URL, PROPERTY_LOAN_URL, TRADING_URL } from '../../Constants_Personal_URLS';
 import { styled } from "@mui/material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -53,19 +53,6 @@ function PersonalLoanFormComponent() {
 
     var current = window.location.href;
 
-    const PRODUCTS_URL = [
-        LOCAL_HOST_URL + PERSONAL_LOAN_URL,
-        LOCAL_HOST_URL + BUSINESS_LOAN_URL,
-        LOCAL_HOST_URL + MORTGAGE_LOAN_URL,
-        LOCAL_HOST_URL + HOME_LOAN_URL,
-        LOCAL_HOST_URL + AUTO_LOAN_URL,
-        LOCAL_HOST_URL + INSURANCE_URL,
-        LOCAL_HOST_URL + CREDIT_CARD_URL,
-        LOCAL_HOST_URL + GOLD_LOAN_URL,
-        LOCAL_HOST_URL + AGRICULTURE_LOAN_URL,
-        LOCAL_HOST_URL + EDUCATION_LOAN_URL,
-        LOCAL_HOST_URL + PROPERTY_LOAN_URL
-    ];
 
     const [name, setName] = useState('')
     const [companyname, setCompanyName] = useState('')
@@ -90,7 +77,7 @@ function PersonalLoanFormComponent() {
         <MidDiv>
             <LeftDiv>
                 <h2 style={{ fontSize: '36px', lineHeight: '40px', fontFamily: 'sans-serif', fontWeight: 700, marginBottom: '26px' }}>Personal Loan</h2>
-                <p style={{ lineHeight: 1.7, fontSize: '16px', fontWeight: 500, textAlign: 'justify', fontFamily: 'sans-serif', display: "block" }}>A Personal loan is an unsecured loan that can be used for a variety of purposes such as medical treatments, home renovation, traveel, wedding and any other urgent financial requirements. unlike secured loans, personal loans don't require any collateral or security. You can find personal loans through banks, credit unions and online lenders. The money you borrow must be repaid over time, typically with interest. Personal loans can be a convenient way to access funds quickly and can help you achieve your finance goals. A personal loan can be availed when an individual has an immediate requirement of funds, with minimal documentation, processing time with immediate disbursal to Customer bank account. It serves as a grea option for individual for meeting their immediate financial requirements. We, at Finmas Financial Services Pvt. Ltd., understand our customers and provide them with the perfect solutions for their requirements. Get in touch with us to know your personal loan eligibility and other terms and conditions.</p>
+                <p style={{ lineHeight: 1.7, fontSize: '16px', fontWeight: 500, textAlign: 'justify', fontFamily: 'sans-serif', display: "block" }}>A Personal loan is an unsecured loan that can be used for a variety of purposes such as medical treatments, home renovation, traveel, wedding and any other urgent financial requirements.A personal loan comes in handy when you have an immediate financial requirement with minimum turnaround time& it is also known as an ‘all-purpose loan’. Unlike other secured loan products a personal loan has easy eligibility criteria & documentation. Today, one can avail instant personal loans to fulfil their personal needs. Unlike secured loans, personal loans don't require any collateral or security. You can find personal loans through banks, credit unions and online lenders. The money you borrow must be repaid over time, typically with interest. Personal loans can be a convenient way to access funds quickly and can help you achieve your finance goals. A personal loan can be availed when an individual has an immediate requirement of funds, with minimal documentation, processing time with immediate disbursal to Customer bank account. It serves as a grea option for individual for meeting their immediate financial requirements. We, at Finmas Financial Services Pvt. Ltd., understand our customers and provide them with the perfect solutions for their requirements. Get in touch with us to know your personal loan eligibility and other terms and conditions.</p>
                 <FormOuterDiv>
                     <h2 style={{ paddingLeft: 125, lineHeight: '40px', fontFamily: 'sans-serif', fontWeight: 700, fontSize: '36px' }}> We are here to help you better</h2>
                     <form onSubmit={onHandleEvent} style={{ width: '100%' }}>
