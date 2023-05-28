@@ -3,7 +3,7 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-19 15:57:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-24 10:43:53
+ * @Last Modified time: 2023-05-26 10:54:17
  * @Description: description
  */
 
@@ -18,7 +18,7 @@ export const INSTAGRAM_URL = 'https://www.instagram.com';
 
 export const WELCOME_TO_FINMAS_TEXT = 'Welcome to FINMAS Financial Services Pvt Ltd';
 
-export const ADMIN_FINMAS_MAIL = 'Vivekanandan.mohan@finmasfin.com';
+export const ADMIN_FINMAS_MAIL = 'adminuser@finmasfin.com';
 
 export const HOME_TEXT = 'HOME';
 
@@ -46,8 +46,8 @@ export const KNOW_MORE_FIRST_PAGE = 'KNOW MORE';
 
 export const ABOUT_US_TEXT = 'FINMAS Financial Services Private Limited is a Private incorporated on 07 December 2021. It is classified as Non-govt company and is registered at Registrar of Companies, Chennai. Its authorized share capital is Rs. 100,000 and its paid up capital is Rs. 100,000.';
 
-export const PHONE_NUMBER = '6382164647';
+export const PHONE_NUMBER = '6382164647 | 9884885546 | 9025849741';
 
 export const WEBSITE = 'www.finmasfin.com';
 
-export const ADDRESS_ALONE_TEXT = 'No.1 Tharai Towers,Loganathan nagar 3rd street,Choolaimedu Chennai - 600094.';
+export const ADDRESS_ALONE_TEXT = 'No.1, B-2 first floor Tharai Towers,Loganathan nagar 3rd street,Choolaimedu Chennai - 600094.';

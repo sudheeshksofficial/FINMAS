@@ -3,13 +3,15 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-25 18:40:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-25 20:08:44
+ * @Last Modified time: 2023-05-26 10:15:52
  * @Description: description
  */
 
 
 //basic Image
 export const FOOTER_IMAGE = require('./assets/images/ManLaptop.jfif');
+export const LOGO_BG_WITH_NAME_IMAGE = require('./assets/images/finmas_logo.jpg')
+export const LOGO_NO_BG_WITH_NAME_IMAGE = require('./assets/images/finmas_logo_bg_removed.png')
 
 
 //Home Page Images

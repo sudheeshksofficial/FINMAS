@@ -3,7 +3,7 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-19 15:57:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-24 09:45:42
+ * @Last Modified time: 2023-05-26 10:42:14
  * @Description: description
  */
 
@@ -72,7 +72,7 @@ function ThreeCard() {
                         </CardMedia>
                         <CardContent>
                             <StyledH2>Phone Number</StyledH2>
-                            <StyledP style={{marginLeft: '100px'}}>{PHONE_NUMBER}</StyledP>
+                            <StyledP style={{marginLeft: '-0.79px'}}>{PHONE_NUMBER}</StyledP>
                         </CardContent>
                     </Card>
                     <Card style={{ background: `rgba(240, 240, 230, 1)` }}>
@@ -80,8 +80,8 @@ function ThreeCard() {
                             <MailIcon style={{ height: '50px', width: '50px' }} />
                         </CardMedia>
                         <CardContent>
-                            <StyledH2>Email Address</StyledH2>
-                            <a href={'mailto:'+ADMIN_FINMAS_MAIL} style={{textDecoration: 'none'}}><StyledP style={{marginLeft: '20px', color: 'rgba(256, 256, 256, 1)'}}>{ADMIN_FINMAS_MAIL}</StyledP></a>
+                            <StyledH2 >Email Address</StyledH2>
+                            <a href={'mailto:'+ADMIN_FINMAS_MAIL} style={{textDecoration: 'none'}}><StyledP style={{marginLeft: '61px', color: 'rgba(256, 256, 256, 1)'}}>{ADMIN_FINMAS_MAIL}</StyledP></a>
                         </CardContent>
                     </Card>
                     <Card style={{ background: `rgba(240, 240, 230, 1)` }}>
@@ -90,7 +90,7 @@ function ThreeCard() {
                         </CardMedia>
                         <CardContent>
                             <StyledH2 style={{marginLeft: '110px'}}>Address</StyledH2>
-                            <StyledP style={{marginLeft: '35px', width: '250px'}}>{ADDRESS_ALONE_TEXT}</StyledP>
+                            <StyledP style={{marginLeft: '35px', width: '250px'}}>{ADDRESS_ALONE_TEXT}<br></br><br></br>Next to Arumbakkam Metro Station.</StyledP>
                         </CardContent>
                     </Card>
                 </Row>

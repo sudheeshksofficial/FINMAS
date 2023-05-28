@@ -3,18 +3,19 @@
  * @Email:  vineebala99@gmail.com
  * @Date:   2023-05-19 15:57:29
  * @Last Modified by: Vineeth Raj B
- * @Last Modified time: 2023-05-25 13:40:44
+ * @Last Modified time: 2023-05-26 10:20:33
  * @Description: description
  */
 
 
-import Finmas1Image from '../../assets/images/finmas_logo.jpg';
-import { Grow, styled } from '@mui/material';
+
+import { /*Grow,*/ styled } from '@mui/material';
 import { CAREERS_TEXT, CLIENTS_TEXT, CONTACT_TEXT, HOME_TEXT, MEMBER_TEXT, OUR_TEAM_TEXT, PRODUCTS_TEXT, SERVICES_TEXT } from '../../Constants';
 import { Link } from 'react-router-dom';
 import { AGRICULTURE_LOAN_URL, AUTO_LOAN_URL, BECOME_PARTNER_URL, BUSINESS_CONSULTING_URL, BUSINESS_LOAN_URL, CAREERS_URL, CLIENTS_URL, CONTACT_US_URL, CORPORATE_FINANCE_URL, CORPORATE_TRUST_URL, CREDIT_CARD_URL, EDUCATION_LOAN_URL, FINANCIAL_ADVISOR_URL, GOLD_LOAN_URL, HOME_LOAN_URL, HOME_URL, INSURANCE_URL, INVESTMENT_CONSULTING_URL, LOCAL_HOST_URL, MORTGAGE_LOAN_URL, NET_WORTH_URL, OUR_TEAM_URL, PERSONAL_LOAN_URL, PROPERTY_LOAN_URL, STOCKS_URL, TRADING_URL, WEALTH_URL } from '../../Constants_Personal_URLS';
-import { useEffect, useRef, useState } from 'react';
+import { /*useEffect, useRef,*/ useState } from 'react';
 import Rectangle1min from './Rectangle1/Rectangle1min';
+import { LOGO_NO_BG_WITH_NAME_IMAGE } from '../../ConstantsImage';
 
 
 
@@ -220,7 +221,7 @@ function TitleBar2() {
     }
     );
 
-    const [state, setState] = useState({
+    /*const [state, setState] = useState({
         showFirst: true,
         showSecond: false
     });
@@ -243,7 +244,7 @@ function TitleBar2() {
         return () => {
             resetTimeOut();
         }
-    });
+    });*/
 
     const Finmas1 = styled('img')({
         height: `80px`,
@@ -252,11 +253,10 @@ function TitleBar2() {
         position: `absolute`,
         left: `67px`,
         top: `59px`,
-        color: `black`,
-        opacity: state.showFirst ? 1 : 0
+        color: `black`
     });
 
-    const Finmas2 = styled('img')({
+    /*const Finmas2 = styled('img')({
         height: `80px`,
         width: `209.29px`,
         objectFit: `cover`,
@@ -265,7 +265,7 @@ function TitleBar2() {
         top: `59px`,
         color: `black`,
         opacity: state.showFirst ? 0 : 1
-    });
+    });*/
 
     const ProductsHoverDiv = styled('div')({
         display: (productHover) ? 'block' : 'none',
@@ -335,18 +335,20 @@ function TitleBar2() {
 
 
     return (
+        
         <div>
             <BecomeAMemberDiv></BecomeAMemberDiv>
-            <Grow in={state.showFirst} style={{ transformOrigin: '0 0 0' }}{...(state.showFirst ? { timeout: 1000 } : {})}>
+            {//<Grow in={state.showFirst} style={{ transformOrigin: '0 0 0' }}{...(state.showFirst ? { timeout: 1000 } : {})}>
+}
                 <Link to={HOME_URL}>
-                    <Finmas1 className='Finmas1' src={Finmas1Image} loading="lazy" alt={'FINMAS 1'} />
+                    <Finmas1 className='Finmas1' src={LOGO_NO_BG_WITH_NAME_IMAGE} loading="lazy" alt={'FINMAS 1'} />
                 </Link>
-            </Grow>
+            {/*</Grow>
             <Grow in={state.showFirst} style={{ transformOrigin: '0 0 0' }}{...(state.showFirst ? { timeout: 1000 } : {})}>
                 <Link to={HOME_URL}>
                     <Finmas2 className='Finmas2' src={Finmas1Image} loading="lazy" alt={'FINMAS 1'} />
                 </Link>
-            </Grow>
+    </Grow>*/}
             <Link to={HOME_URL}>
                 <Home onMouseEnter={() => setHomeHover(true)} onMouseLeave={() => setHomeHover(false)}>
                     {HOME_TEXT}
